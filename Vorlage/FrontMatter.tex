@@ -28,6 +28,19 @@
 		\renewcommand{\buwlogopdf}{Medien/Uni_Wuppertal_Logo__cmykblack}
 	}
 }
+% Gemeinsamer Logo-Block von Bergischer Universität und TMDT.
+% Die farbige TMDT-Bildmarke wird aus der offiziellen Vektordatei freigestellt.
+\newcommand{\tmdtlogopdf}{Medien/TMDT_Logo_Farbe.pdf}
+\newcommand{\tmdtmark}[1]{%
+	\includegraphics[height=#1,trim=760bp 0bp 0bp 0bp,clip]{\tmdtlogopdf}%
+}
+\newcommand{\buwandtmdtlogos}[1]{%
+	\includegraphics[height=#1]{\buwlogopdf}%
+	\hspace{0.6em}%
+	{\color{TmdtDarkBlue}\rule{0.6pt}{#1}}%
+	\hspace{0.6em}%
+	\tmdtmark{#1}%
+}
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Titelseite %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -36,13 +49,13 @@
 		\sffamily%
 		%
 		\hspace{-1.5em}%
-		\includegraphics[width=4.5cm]{\buwlogopdf}%
+		\buwandtmdtlogos{1.42cm}%
 		\hfill%
-		\begin{minipage}[b]{\linewidth-4.5cm}
+		\begin{minipage}[b]{\dimexpr\linewidth-7cm\relax}
 			\begin{flushright}
 				\normalsize{Fakultät für Elektrotechnik,}%
 				\\\vspace{0.2mm}
-				\normalsize{Informationstechnik und Medientechnik}%
+				\normalsize{Informationstechnik und Medientechnologie}%
 				\vspace*{0.05mm}
 			\end{flushright}
 		\end{minipage}
@@ -74,8 +87,10 @@
 			{\Large\matrikelnummer}%
 			\bigskip\\%
 			\studiengang%
-			\\
-			{\large\schwerpunkt}%
+			\ifstrempty{\schwerpunkt}{}{%
+				\\
+				{\large\schwerpunkt}%
+			}%
 			\vspace{2em}%
 			\hspace{0em}\\%
 			\normalsize%
@@ -105,22 +120,32 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Themenblatt / Aufgabenstellung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-	\pdfbookmark[1]{Aufgabenstellung}{aufgabe}%
-	\includepdf[
-		pages={1},
-		fitpaper=true
-	]{Medien/Aufgabenstellung.pdf}%
-	\clearpage{\pagestyle{empty}\cleardoublepage}%
+	\ifbool{aufgabenstellung}{%
+		\IfFileExists{\aufgabenstellungPdf}{%
+			\pdfbookmark[1]{Aufgabenstellung}{aufgabe}%
+			\includepdf[
+				pages={1},
+				fitpaper=true
+			]{\aufgabenstellungPdf}%
+			\clearpage{\pagestyle{empty}\cleardoublepage}%
+		}{%
+			\PackageWarning{TMDT-Thesisvorlage}{Aufgabenstellung nicht gefunden: \aufgabenstellungPdf}%
+		}%
+	}{}%
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Verlängerung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 	\ifbool{verlaengerung}{%
-		\cleardoublepage%
-		\pdfbookmark[1]{Verlängerung}{verlaengerung}%
-		\includepdf[pages={1},fitpaper=true]{Medien/Verlaengerung.pdf}%
-	  	\clearpage{\pagestyle{empty}\cleardoublepage}%
+		\IfFileExists{\verlaengerungPdf}{%
+			\cleardoublepage%
+			\pdfbookmark[1]{Verlängerung}{verlaengerung}%
+			\includepdf[pages={1},fitpaper=true]{\verlaengerungPdf}%
+			\clearpage{\pagestyle{empty}\cleardoublepage}%
+		}{%
+			\PackageWarning{TMDT-Thesisvorlage}{Verlaengerung nicht gefunden: \verlaengerungPdf}%
+		}%
 	}{}%
 %
 %
@@ -130,12 +155,18 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Eidesstattliche Versicherung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-	\pdfbookmark[1]{Eidesstattliche Versicherung}{versicherung}%
-	\includepdf[
-		pages={1-2},
-		fitpaper=true
-	]{Medien/Muster_Eidesstattliche_Versicherung.pdf}%
-	\clearpage{\pagestyle{empty}}%
+	\ifbool{eidesstattlicheVersicherung}{%
+		\IfFileExists{\versicherungPdf}{%
+			\pdfbookmark[1]{Eidesstattliche Versicherung}{versicherung}%
+			\includepdf[
+				pages=-,
+				fitpaper=true
+			]{\versicherungPdf}%
+			\clearpage{\pagestyle{empty}}%
+		}{%
+			\PackageWarning{TMDT-Thesisvorlage}{Eidesstattliche Versicherung nicht gefunden: \versicherungPdf}%
+		}%
+	}{}%
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -163,10 +194,13 @@
 %%% Sperrvermerk / Geheimhaltungsvereinbarung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
 	\ifbool{sperrvermerk}{%
-		%\cleardoublepage%
-		\pdfbookmark[1]{Sperrvemerk}{verlaengerung}%
-		\includepdf[pages={1},fitpaper=true]{Medien/Muster_Sperrvermerk_Thesis.pdf}%
-	  	\clearpage{\pagestyle{empty}}%
+		\IfFileExists{\sperrvermerkPdf}{%
+			\pdfbookmark[1]{Sperrvermerk}{sperrvermerk}%
+			\includepdf[pages=-,fitpaper=true]{\sperrvermerkPdf}%
+			\clearpage{\pagestyle{empty}}%
+		}{%
+			\PackageWarning{TMDT-Thesisvorlage}{Sperrvermerk nicht gefunden: \sperrvermerkPdf}%
+		}%
 	}{}%
 %
 %
@@ -183,9 +217,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Declaration of Generative AI %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %
-	\clearpage{\pagestyle{empty}\cleardoublepage}
-	\pdfbookmark[1]{Declaration of Generative AI}{declaration-generative-ai}%
-	\input{Kapitel/DeclarationGenerativeAI}%
+	\ifbool{kiErklaerung}{%
+		\clearpage{\pagestyle{empty}\cleardoublepage}
+		\pdfbookmark[1]{Erklärung zur Nutzung generativer KI}{declaration-generative-ai}%
+		\input{Kapitel/DeclarationGenerativeAI}%
+	}{}%
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

@@ -1,167 +1,256 @@
-#!/bin/bash
-version=$(date +"%Y-%m-%d")
-workingDirectory=$PWD
-outfile="${workingDirectory}/Thesisvorlage_${version}.zip"
-tempDirectoryVersionIntegration='/tmp/Thesisvorlage/CopyForAutomaticVersionIntegration/'
-texMasterfile='Thesis'
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% DATEI-INFO %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% In dieser Datei werden alle wichtigen Einstellungen der Vorlage gesetzt %%%%
+%%% Hier darfst du Werte ändern ;-) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\ifx\inPreamble\undefined \else %%%% 'MAGIC' %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%% Pflicht-Einstellungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-filesNeeded="*.tex siunitx.cfg ./Medien/*.* ./Kapitel/*.* ./Verzeichnisse/*.* ./Vorlage/*.* Thesisbeispiel-FAQ-Tipps.pdf readme.txt"
-#######################################
+% Bachelor-Thesis, Master-Thesis
+\newcommand{\artderarbeit}{Bachelor-Thesis}
 
-filesNeeded_filtered=""
-filesNeeded_pathsInTempdirectory=""
-declare -A filesNeededBySuffix # associative array
-declare -A suffixesFound
+% Thema der Thesis (wie in der Aufgabenstellung)
+\newcommand{\thema}{So lautet das Thema der Thesis}
 
-for file in ${filesNeeded}
-do
-	fileSuffix=${file##*.}
-	fileName=${file%.*}
-	#printf "%s : %s\n" ${fileSuffix} ${fileName};
+% Gibt es eine Sperrvermerk oder Geheimhaltungsvereinbarung für die Thesis?
+\setbool{sperrvermerk}{false}
+% Wenn ja, hier auf "true" setzen und die aktuelle offizielle PDF einbinden.
 
-	case $fileSuffix in
-		tex|bib|cfg|png|pdf|txt)
-			#echo "$file accepted"
-			if [[ -v suffixesFound[$fileSuffix] ]]; then
-				((suffixesFound[$fileSuffix]++))
-			else
-				suffixesFound[$fileSuffix]=1
-			fi
-			
-			filesNeededBySuffix["${fileSuffix}-${suffixesFound[$fileSuffix]}"]=$file
+% Gibt es eine Verlängerung der Bearbeitungszeit?
+\setbool{verlaengerung}{false}
+% Wenn ja, hier auf "true" setzen und die aktuelle offizielle PDF einbinden.
 
-			filesNeeded_filtered+=" ${file}"
-			filesNeeded_pathsInTempdirectory+=" ${tempDirectoryVersionIntegration}${file}"
-			;;
-		
-		*)
-#			echo "$file ignored"
-			;;
-	esac
-done
+% Offizielles Themenblatt / Aufgabenstellung in die Thesis einbinden?
+\setbool{aufgabenstellung}{false}
 
-#echo "Suffixes found:"
-#for suffix in "${!suffixesFound[@]}"
-#do
-#	printf " - %s (%d)\n" $suffix ${suffixesFound[$suffix]}
-#	for (( index = 1; index <= ${suffixesFound[$suffix]}; index++ ));	do
-#		printf "      %s\n" ${filesNeededBySuffix["$suffix-$index"]}
-#	done
-#done
+% Aktuelle eidesstattliche Versicherung des zuständigen Prüfungsamts einbinden?
+\setbool{eidesstattlicheVersicherung}{false}
 
-#echo $filesNeeded_pathsInTempdirectory
-#echo "${filesNeeded_filtered}"
-#######################################
+% Zusätzliche Erklärung zur Nutzung generativer KI einbinden?
+% Nur aktivieren, wenn sie vom TMDT bzw. vom zuständigen Prüfungsamt verlangt wird.
+\setbool{kiErklaerung}{false}
 
-#clean up temp directory
-echo 'Clean up temporary files (in case any are left from a previous run)'
-rm -rf "${tempDirectoryVersionIntegration}"
-mkdir -p "${tempDirectoryVersionIntegration}"
+% Eine optionale Danksagung kann in der Datei "Danksagung.tex" formuliert werden
+\setbool{danksagung}{false}
 
-echo 'Create copy of required files'
-cp --parents ${filesNeeded_filtered} "${tempDirectoryVersionIntegration}"
+% Euer voller Name
+\newcommand{\autor}{Max Mustermann}
 
-echo 'Go to copied directory'
-cd ${tempDirectoryVersionIntegration}
+% Eure Matrikelnummer
+\newcommand{\matrikelnummer}{1234567}
 
-echo 'Add info header to files where possible'
+% Offizielle Bezeichnung des Studiengangs laut Studienbescheinigung
+\newcommand{\studiengang}{Offizielle Bezeichnung des Studiengangs}
 
-declare -a infoHeader
-infoHeader+=("Version ${version}")
-while read -r line
-do
-	infoHeader+=("${line}")
-done < "${workingDirectory}/releaseInformationToPrepend"
+% Wenn es in Eurem Studiengang keine Schwerpunkte gibt einfach leer lassen
+\newcommand{\schwerpunkt}{}
 
-for suffix in "${!suffixesFound[@]}"
-do
-	case $suffix in
-		tex | bib | cfg | txt)
-			case $suffix in
-				tex | bib | cfg)
-					blockSymbol="%"
-					;;
-				txt)
-					blockSymbol="*"
-					;;
-				*)
-					printf "ERROR: Unkown Case should never occur here as all suffixes have been checked before\n"
-					exit 1
-			esac
+% Organisationseinheit, an der die Thesis geschrieben wird
+\newcommand{\lehrstuhl}{Lehrstuhl für Technologien und Management der Digitalen Transformation (TMDT)}
 
-			for (( index = 1; index <= ${suffixesFound[$suffix]}; index++ ));	do
-				currentFile=${filesNeededBySuffix["$suffix-$index"]}
-				#echo "   Processing $currentFile"
-				fileContent=$(<$currentFile)
-				{
-					for line in "${infoHeader[@]}"
-					do
-						echo "${blockSymbol}${blockSymbol} ${line}"
-					done
-					for i in {1..80}
-					do
-						printf "%s" "${blockSymbol}"
-					done
-					printf "\n"
-					echo ""
-					echo "${fileContent}"
-				}>$currentFile
-			done
-			;;
+% Betreuer? (falls mehrere: mit \\ trennen)
+\newcommand{\betreuer}{Vorname Nachname M.Sc.}
 
-		*)
-			##echo  "   i dont know how to add text to ${suffix}-files"
-			;;
-	esac
-done
+% Erstprüfer (siehe Anmeldung)
+\newcommand{\prueferA}{Prof. Dr.-Ing. Vorname Nachname}
 
-printf 'Generate example pdf and check if original files compile without errors\n'
-printf '\tInit-Compile for .aux-Files\n'
-pdflatex -interaction=nonstopmode "${texMasterfile}.tex" > /dev/null
-
-printf '\tBibTeX\n'
-bibtex Thesis.aux > /dev/null
-
-printf '\tWe need two compilation cycles for correct example pdf\n'
-printf '\t\tfirst run...'
-pdflatex -interaction=nonstopmode Thesis.tex > /dev/null
-printf 'done\n'
-printf '\t\tsecond run...'
-pdflatex -interaction=nonstopmode Thesis.tex > /dev/null
-printf 'done\n'
-printf '\trenaming example pdf for end user\n'
-cp Thesis.pdf 'Thesisbeispiel-FAQ-Tipps.pdf'
-
-printf "Creating zip archive..."
-rm -f "${outfile}"
-zip -q -9 "${outfile}" ${filesNeeded}
-#  zip -> zip archiv erstellen
-#  -9  -> Stärkste Komprimierung verwenden (0 bis 9)
-# outfile -> Name der Zip-Datei
-#  Rest-> Dateien, die einbezogen werden sollen
-printf "done.\n\tCurrent release has been packed as ${outfile}\n"
-printf "\n"
-cd ${workingDirectory}
-# Noch mal entpacken und kompilieren, um die Vollständigkeit zu verifizieren?"
-./verifyReleasePackage.sh "${outfile}"
-verificationResult=$?
-if [ $verificationResult -eq 0 ]
-then
-	printf 'Package is VALID\n'
-else
-	printf 'Package is INVALID\n'
-	printf 'Please check if the archive contains all necessary files.\n'
-	printf 'If that is the case, check if there are errors in the LaTeX-code.\n'
-	exit 1
-fi
-exit 0
+% Zweitprüfer (siehe Anmeldung)
+\newcommand{\prueferB}{Prof. Dr.-Ing. Vorname Nachname}
 
 
-#TODO : Release-Version in die .tex-Dateien integrieren (Kommentar am Anfang)
-# dafür müsste man:
-# - eine Kopie aller Dateien erzeugen
-# - in allen Dateien am Anfang den Versionsblock hinzufügen
-# - dann mit der Kopie den Release erstellen
-# - die Kopie löschen
+% Euer Abgabedatum
+\newcommand{\abgabedatum}{03. August 1972}
 
-#TODO : Automatic numbering *a, *b, *c for same-day releases
+% Ort
+\newcommand{\ort}{Wuppertal}
+
+% Einzubindende offizielle Dokumente.
+% Die jeweils gültigen Fassungen beim zuständigen Prüfungsamt herunterladen.
+\newcommand{\aufgabenstellungPdf}{Medien/Aufgabenstellung.pdf}
+\newcommand{\verlaengerungPdf}{Medien/Verlaengerung.pdf}
+\newcommand{\versicherungPdf}{Medien/Eidesstattliche-Versicherung.pdf}
+\newcommand{\sperrvermerkPdf}{Medien/Sperrvermerk.pdf}
+
+% Schlagwörter, mit denen man das PDF finden kann
+\newcommand{\schlagwoerter}{Thesis, Bachelor, TMDT, Digitale Transformation, Bergische Universität Wuppertal}
+
+
+%%% Ende der Pflicht-Einstellungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Layout-Anpassung (Optional) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% Zweiseitiges Layout
+\setbool{doppelseitig}{false}			% Einseitiger oder doppelseitiger Druck?
+
+%%% Hyperlinks
+\setbool{linksMarkieren}{true}			% Anklickbare Links im PDF-Dokument markieren?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Verzeichnisse %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbool{abbildungsverzeichnis}{true} 	% Abbildungsverzeichnis erzeugen?
+\setbool{quellcodeverzeichnis}{true}	% Quellcodeverzeichnis erzeugen?
+\setbool{tabellenverzeichnis}{true}		% Tabellenverzeichnis erzeugen?
+\setbool{symbolverzeichnis}{true}		% Symbolverzeichnis erzeugen?
+\setbool{akronymverzeichnis}{true}		% Akronymverzeichnis erzeugen?
+\setbool{abkuerzungsverzeichnis}{true}	% Abkürzungsverzeichnis erzeugen?
+\setbool{glossar}{true}					% Glossar erzeugen?
+
+\setbool{verzeichnisseImInhaltsverzeichnis}{true} % Verzeichnisse im Inhaltsverzeichnis erwähnen?
+
+\setbool{verzeichnisseZusammenfassen}{true} % Seitenumbruch zwischen den Verzeichnissen deaktivieren?
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Kapitelnummerierung %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\newcommand\kapitelTiefeNummerierung{3} 	  % Wie tief soll nummeriert werden?
+\newcommand\kapitelTiefeInhaltsverzeichnis{2} % Bis zu welcher Tiefe sollen die Einträge ins Inhaltsverzeichnis?
+
+% Tiefe Bedeutung
+% 0     \chapter
+% 1     \section
+% 2     \subsection
+% 3     \subsubsection
+% 4     \paragraph
+% 5     \subparagraph
+
+
+%%% Zusatzerklärung
+
+\setbool{zusatzErklaerung}{false} 		% Hiermit können zusätzliche Erklärungen eingebunden werden (siehe Zusatzerklaerung.tex, wird im Normalfall nicht benötigt)
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Farben (Optional) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setbool{color}{true} % Farbe für Design-Elemente verwenden (true/false)
+
+\newcommand{\colormodel}{cmyk} % z.B. cmyk, rgb oder gray
+% Falls das Tool eurer Druckerei Schwarz-Weiß-Seiten trotz \setbool{color}{false}
+% _fälschlicherweise_ als Farbseiten erkennt (das kann ziemlich teuer werden!),
+% könnt ihr hier das Farbmodell der Vorlage umstellen.
+%
+% So hatten wir schon einmal den Fall, dass eine Thesis-Druckerei die S/W-Seiten
+% erst korrekt erkannt hat, wenn das (eigentlich für das Drucken ungeeignete)
+% RGB-Modell verwendet wurde...
+%
+% Bilder und eingebundene PDFs werden durch diese Einstellung nicht geändert!
+%
+% Ein paar Beispiele für sinnvolle Werte:
+% {cmyk}  - CMYK (Cyan, Magenta, Yellow, Key) ist _das Farbmodell_ für alles was gedruckt wird.
+%           Jede professionelle Druckerei kann damit umgehen!
+%           => der Standard bei Drucksachen und daher auch in dieser Vorlage
+%
+% {rgb}   - RGB (Red, Green, Blue) ist ein Farbmodell für Bildschirme etc.
+%           Im Gegensatz zum Druck mit Pigmenten (=subtraktive Farbmischung) wird
+%           hier mit Licht gearbeitet (Additive Farbmischung). RGB ist daher nicht
+%           für den Druck geeignet und wird vor dem Druckvorgang in ein anderes
+%           Farbmodell (z.B. CMYK) umgewandelt.
+%           => eigentlich falsch, wird in Einzelfällen aber von Druckereien angefordert
+%
+% {gray}  - Wer möchte, kann auch das Farbmodell "gray" verwenden. Dann werden alle
+%           Farben direkt in Graustufen umgerechnet.
+%           In diesem Fall wird zusätzlich \setbool{color}{false} empfohlen.
+%           So wird die Darstellung von Quelltexten an die nun fehlenden Farben angepasst.
+%
+% Weblinks zum Thema:
+% https://de.wikipedia.org/wiki/CMYK-Farbmodell
+% https://de.wikipedia.org/wiki/RGB-Farbraum
+% https://www.ctan.org/pkg/xcolor
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Seitenränder %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setlength{\bindekorrektur}{1.0cm}
+% Wie breit ist der Teil, an dem die einzelnen Blätter
+% mit einander verklebt/anderweitig verbunden werden?
+
+\setlength{\randAussen}{%
+	\ifbool{doppelseitig}{%
+		2.50cm% 2.5 - 3.4cm (bei doppelseitigem Layout)
+	}{%
+		1.88cm% 1.88 - 2.5cm (bei einseitigem Layout)
+	}%
+}
+% Wie viel Rand außen neben dem Text (einseitig: wie viel Rand rechts neben dem Text)
+% Innerer bzw. linker Rand wird daraus automatisch berechnet
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Literatur-Anpassung (Optional) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Es gibt drei Arten von Quellen:
+%
+% Gruppe A : Quellen, die im Text mit \cite{...} zitiert wurden
+% Gruppe B : Quellen, die mit \nocite{...} markiert wurden (und sonst nicht zitiert wurden)
+% Gruppe C : Quellen, die gar nicht zitiert wurden
+
+\setbool{nichtZitiertInweiterfuehrendeLiteratur}{true}
+% nicht zitierte Quellen automatisch mit \nocite{} aufnehmen?
+% => d.h. Gruppe C wird automatisch in Gruppe B verschoben
+% => ansonsten wird stattdessen \explizitesNocite aktiv
+
+\setbool{weiterfuehrendeLiteratur}{true}
+% Separates Verzeichnis für weiterführende Literatur?
+%
+% "true": Separates Verzeichnis "Weiterführende Literatur" erstellen
+%   Gruppe A => "Literatur"
+%   Gruppe B => "Weiterführende Literatur"
+%
+% "false": Alles landet in "Literatur"
+%   Gruppe A => "Literatur"
+%   Gruppe B => "Literatur"
+
+\newcommand{\explizitesNocite}{%
+% Wenn bei der Literatur Gruppe B manuell festgelegt werden soll, kann dies hier geschehen:
+	\nocite{ARM:AMBA4AXI4StreamProtocol:v1_0}
+	\nocite{ARM:AMBA_AXI_and_ACE_Protocol_Specification:E}
+	\nocite{AnalogDevices:ADAU1761:rev_C}
+	\nocite{Book:PerceptionBasedDataprocessingInAcoustics}
+	\nocite{Philips:I2S_BUS_Specification}
+	\nocite{Xilinx:PG021:v7_1}
+	\nocite{Xilinx:UG473:v1_11}
+	\nocite{Xilinx:UG761:v13_1}
+	\nocite{Xilinx:UG901:v2016_2}
+	\nocite{Xilinx:UG906:v2016_2}
+	\nocite{Xilinx:WP231}
+	\nocite{Xilinx:XAPP1206:v1_1}
+	\nocite{Xilinx:PG109:v9_0}
+	\nocite{ARM:NEONProgrammersGuide:v1_0}
+	\nocite{Book:TheScientistandEngineersGuidetoDigitalSignalProcessing}
+	\nocite{IEEE:754:2008}
+	\nocite{SpectrumAndSpectralDensityEstimationByTheDFTincludingAListOfWindowFunctions}
+	% ... weitere Quellen ...
+}
+
+\setbool{alleAutorenExplizitNennen}{true} % Steuert die Nennung der Autoren im Literaturverzeichnis
+% Hier gibt es zwei übliche Varianten:
+% true  : Es werden immer alle Autoren genannt.
+% false : Bis zu vier Autoren werden mit Namen genannt.
+%           Gibt es mehr Autoren, werden die ersten drei genannt und
+%           der Rest mit et al. abgekürzt (wie auch im Zitierschlüssel)
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Sprach-Anpassung (Optional) %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Eine Liste der mögliche Sprachen finden sich in der Dokumentation zum LaTeX-Paket 'babel'
+\newcommand{\hauptsprache}{ngerman} % Sprache, in der das Dokument geschrieben ist. Wird auch für die Verzeichnisnamen etc. verwendet
+\newcommand{\weitereSprachen}{ngerman, english, french}% weitere Sprachen, auf die kurzfristig mit \selectlanguage{language} gewechselt wird. (Wenn es mehrere sind werden diese mit Kommata getrennt)
+
+% ngerman - Deutsch nach neuer Rechtschreibung
+% english - Englisch
+% french - Französisch
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\fi %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%

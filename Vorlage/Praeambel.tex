@@ -59,6 +59,9 @@
 \newbool{verlaengerung}
 \newbool{danksagung}
 \newbool{zusatzErklaerung}
+\newbool{aufgabenstellung}
+\newbool{eidesstattlicheVersicherung}
+\newbool{kiErklaerung}
 
 \newbool{color}
 \newbool{linksMarkieren}
@@ -279,39 +282,28 @@
 ]{xcolor}		% Farben
 \selectcolormodel{\colormodel}% Konvertiere alle Farben in das angegebene Farbmodell
 
-% Universell nutzbar
-\definecolor{Buw}			{cmyk}{0.55, 0.00, 1.00, 0.00} % Pantone 376
-\definecolor{BuwEtikett}	{cmyk}{0.55, 0.00, 1.00, 0.10} % Pantone 376 + 10K
-
-\definecolor{BuwFak01}		{cmyk}{0.08, 1.00, 0.65, 0.34} % Pantone 201
-\definecolor{BuwFak02}		{cmyk}{1.00, 0.03, 0.34, 0.12} % Pantone 321
-\definecolor{BuwFak03}		{cmyk}{1.00, 0.57, 0.12, 0.70} % Pantone 540
-\definecolor{BuwFak04_oben}	{cmyk}{0.70, 0.30, 0.00, 0.12} % Pantone 646
-\definecolor{BuwFak04_unten}{cmyk}{1.00, 0.61, 0.04, 0.26} % Pantone 301
-\definecolor{BuwFak05}		{cmyk}{0.23, 0.17, 0.13, 0.46} % Pantone Cool Gray 8
-\definecolor{BuwFak06_oben}	{cmyk}{0.37, 1.00, 0.00, 0.26} % Pantone 2425
-\definecolor{BuwFak06_unten}{cmyk}{0.37, 1.00, 0.00, 0.47} % Pantone 2425 + 30K
-\definecolor{BuwFak07}		{cmyk}{1.00, 0.00, 0.55, 0.40} % Pantone 562
-\definecolor{BuwFak08}		{cmyk}{0.00, 0.00, 0.00, 0.00} %
-\definecolor{BuwFak09}		{cmyk}{0.00, 0.30, 0.85, 0.00} % Pantone 1235
+% TMDT-Farbpalette
+\definecolor{TmdtDarkBlue}	{RGB}{1, 66, 98}    % #014262
+\definecolor{TmdtLightBlue}	{RGB}{101, 190, 218} % #65BEDA
+\definecolor{TmdtOrange}	{RGB}{255, 181, 99}  % #FFB563
 
 \definecolor{pureK}			{cmyk}{0.00, 0.00, 0.00, 1.00} % K
 
-\definecolor{AccentStrong}	{cmyk}{0.000,0.420,0.800,0.100} % Orange
-\definecolor{AccentWeak}	{cmyk}{0.295,0.142,0.000,0.310} % Bläuliches Grau
+\colorlet{AccentStrong}		{TmdtOrange}
+\colorlet{AccentWeak}		{TmdtLightBlue!65!TmdtDarkBlue}
 
 % Farbschema
 \ifbool{color}{
 	% wenn Farbe
-	\colorlet{primaryTop}		{Buw}
-	\colorlet{primaryMiddle}	{Buw}
-	\colorlet{primaryBottom}	{Buw}
-	\colorlet{secondaryTop}		{BuwFak06_oben}
-	\colorlet{secondaryMiddle}	{BuwFak06_oben!50!BuwFak06_unten}
-	\colorlet{secondaryBottom}	{BuwFak06_unten}
-	\colorlet{tertiaryTop}		{black!50}
-	\colorlet{tertiaryMiddle}	{black!50}
-	\colorlet{tertiaryBottom}	{black!50}
+	\colorlet{primaryTop}		{TmdtDarkBlue}
+	\colorlet{primaryMiddle}	{TmdtDarkBlue}
+	\colorlet{primaryBottom}	{TmdtLightBlue}
+	\colorlet{secondaryTop}		{TmdtLightBlue}
+	\colorlet{secondaryMiddle}	{TmdtLightBlue!65!TmdtDarkBlue}
+	\colorlet{secondaryBottom}	{TmdtDarkBlue}
+	\colorlet{tertiaryTop}		{TmdtOrange}
+	\colorlet{tertiaryMiddle}	{TmdtOrange}
+	\colorlet{tertiaryBottom}	{TmdtOrange}
 	\colorlet{textBlack}		{black}
 }{
 	% wenn Graustufen
@@ -431,7 +423,7 @@
 	\def\leftoddrighteven{L}
 }
 
-\newlength{\headerbuwlogowidth} % measured width of the logo
+\newlength{\headerbuwlogowidth} % measured width of the BUW/TMDT logo block
 \newlength{\headertextsecondaryheight} % measured height of the secondary text in its box
 \newlength{\headerPrimaryWidth} % maximum width available for the Primary Header Text
 \newlength{\headerSecondaryWidth}
@@ -441,10 +433,10 @@
 	\renewMarks%
 	\fancyhf{}%clear
 	\fancyhead[\rightoddlefteven]{%
-		\includegraphics[height=2em]{\buwlogopdf}%
+		\buwandtmdtlogos{2em}%
 	}%
 	\fancyhead[\leftoddrighteven]{%
-		\settowidth{\headerbuwlogowidth}{\includegraphics[height=2em]{\buwlogopdf}}%
+		\settowidth{\headerbuwlogowidth}{\buwandtmdtlogos{2em}}%
 		\setlength{\headerSecondaryWidth}{\linewidth-\headerbuwlogowidth-1em}%
 		%
 		\settoheight{\headertextsecondaryheight}{\parbox[b]{\headerSecondaryWidth}{\sffamily\rightmark}}%
@@ -820,7 +812,7 @@
     pdfstartview={FitH},		% fits the width of the page to the window
     pdftitle=\thema,			% Titel
     pdfauthor=\autor,			% Autor
-    pdfsubject=\artderarbeit,	% subject of the document
+    pdfsubject={\artderarbeit\ am TMDT},	% subject of the document
     pdfcreator=LaTeX,			% creator of the document
     pdfproducer=,				% producer of the document
     pdfkeywords=\schlagwoerter,	% Schlagworte
@@ -873,7 +865,11 @@
 \usepackage[
 	\hauptsprache,
 %	textwidth=\randRechtsAussen-0em,%TODO sollte sich berechnen lassen, oder?
-	textsize=scriptsize
+	textsize=scriptsize,
+	backgroundcolor=TmdtLightBlue!20!white,
+	linecolor=TmdtOrange,
+	bordercolor=TmdtDarkBlue,
+	textcolor=black
 ]{todonotes}
 
 \AtBeginDocument{% korrekte Breite laden
@@ -892,11 +888,6 @@
 \makeatother
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Lets have some fun %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\usepackage{tikzducks}
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %% Für Debugszwecke: Mehr Infos zu Boxen ausgeben:
 %\showboxdepth=\maxdimen
 %\showboxbreadth=\maxdimen
-

@@ -1,21 +1,69 @@
-\ProvidesFile{siunitx.cfg}
-\sisetup{
-	detect-all,	% Font an die Einstellungen des umgebenden Textes anpassen
-	detect-inline-family = math, %TODO  math/text prüfen
-	detect-inline-weight = math, %TODO  math/text prüfen
-	detect-display-math  = true, % Font an Mathematik-Umgebungen anpassen
-	scientific-notation = engineering, % Wissenschaftliche Notation, Exponent als Vielfaches von drei
-	tight-spacing = true, % Whitespace reduzieren
-	output-product = \cdot,% Multiplikationszeichen
-	exponent-product = \,\cdot,% Multiplikationszeichen Exponent
-	binary-units = true,
-	output-decimal-marker = {,}, % Dezimaltrenner
-	per-mode = fraction,% symbol, fraction, reciprocal,reciprocal-positive-first,
-%	per-symbol = {/},
-	separate-uncertainty, % Unsicherheit wird separat mit \pm ausgegeben
-%
-% manuelle Übersetzung, Paket bekommt die aktuelle Sprache im Moment offenbar nicht richtig mit
-	list-final-separator = { und },
-	list-pair-separator  = { und },
-	range-phrase         = { bis }
-}
+% !TEX root = ./Thesis.tex
+% TMDT-Thesisvorlage der Bergischen Universität Wuppertal
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Benutzer-Einstellungen %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%                                                                      %%%%%%%%
+%      Einstellungen erfolgen in der Datei Einstellungen.tex             %%%%%%%
+       \input{Einstellungen.tex}                                          %%%%%%
+%                                                                        %%%%%%%
+%%                                                                      %%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\input{Vorlage/Praeambel} % Pakete und Kommandos (nicht ändern) %%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Selber eingebundene Pakete (optional)
+%\usepackage[package-optionen]{name-vom-package}
+
+% Eigene Befehle & Definitionen (optional)
+\newcommand{\zb}{z.\,B.}
+\newcommand{\buw}{Bergische Universität Wuppertal}	  % Beispiel mit \newcommand
+\newenvironment{vorlagenbeispiel}{\color{blue}}{}            % Beispiel-Umgebung
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document} % Hier beginnt das Dokument %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\input{Vorlage/FrontMatter} % Titelseite etc. (bitte nicht ändern) %%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  Ab hier ändern und ergänzen  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  | | | | | | | | | | | | | |  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%  V V V V V V V V V V V V V V  %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	% weitere .tex-Dateien werden mit \input eingebunden
+	% (z.B. eine für jedes Kapitel)
+
+	% Einführungskapitel
+	\input{Kapitel/Einleitung}
+	\input{Kapitel/Grundlagen}
+
+
+	% weitere (eigene) Kapitel
+	\input{Kapitel/Entwurf}
+	\input{Kapitel/Realisierung}
+	%...
+
+	% Schlusskapitel
+	\input{Kapitel/Analyse}
+	\input{Kapitel/Schlussbetrachtungen}
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\appendix % Ende des Inhalts, hier beginnt der Anhang %%%%%%%%%%%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	\input{Vorlage/BackMatter}% Verzeichnisse (bitte nicht ändern) %%%%%%%%%%%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+	% Anhänge
+%	\input{Kapitel/Klassendiagramm}
+%	\input{Kapitel/Versuchsaufbauten}
+	\input{Kapitel/Sourcecode}
+
+	\input{Kapitel/FAQ}              % Fragen und Antworten zur Vorlage und zu LaTeX
+	\input{Kapitel/LaTeX-Beispiele}  % Beispiele zu LaTeX
+
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+	%%% ENDE %%% ENDE %%% ENDE %%% ENDE %%% ENDE %%% ENDE %%% ENDE %%% ENDE %%%%
+	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}
