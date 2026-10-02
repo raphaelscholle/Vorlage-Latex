@@ -1,24 +1,115 @@
-\chapter*{Erklärung zur Nutzung generativer KI}
+% !TEX root = ../Thesis.tex
+% Use a self-contained landscape form with the proportions of the reference.
+% Fill in the table with the tools actually used; add rows as needed.
+\clearpage
+\begingroup
+\newgeometry{left=1.5cm,right=1.5cm,top=1.5cm,bottom=1.5cm,
+  headheight=0pt,headsep=0pt,footskip=0pt}
+\begin{landscape}
+\pagestyle{empty}
+\raggedright
+\fontfamily{phv}\fontsize{10}{12}\selectfont
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\phantomsection
+\addcontentsline{toc}{chapter}{KI- und Hilfsmittelverwendung}
+\noindent\makebox[\linewidth][r]{%
+  \textbf{Tabellarische Dokumentation der KI- und Hilfsmittelverwendung}}\par
+\vspace{6mm}
 
-In dieser Arbeit wurden die folgenden Werkzeuge mit generativer künstlicher
-Intelligenz unterstützend eingesetzt. Die fachliche Prüfung und Verantwortung
-für sämtliche Inhalte liegen bei der Autorin bzw. beim Autor.
+\noindent
+\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}l@{}}
+Name, Vorname: \autor & Matrikelnummer: \matrikelnummer
+\end{tabular*}
 
-\begin{center}
-\renewcommand{\arraystretch}{1.35}
-\begin{tabular}{|p{0.25\textwidth}|p{0.22\textwidth}|p{0.38\textwidth}|}
-\hline
-\textbf{Werkzeug und Modell} & \textbf{Betroffene Teile} & \textbf{Art und Zweck der Nutzung} \\
-\hline
-% Beispiel:
-% Werkzeug, Modell und Stand & Kapitel/Abschnitt & Art und Zweck der Nutzung \\
-% \hline
-\multicolumn{3}{|c|}{\textit{Keine Einträge}} \\
-\hline
-\end{tabular}
-\end{center}
+\vspace{5mm}
+% Replace the empty box with \kiAngekreuzt for the applicable statement.
+\newcommand{\kiKaestchen}{\tikz[baseline=-0.5ex]\draw (0,0) rectangle (0.22,0.22);}
+\newcommand{\kiAngekreuzt}{\tikz[baseline=-0.5ex]{%
+  \draw (0,0) rectangle (0.22,0.22);
+  \draw (0.02,0.02) -- (0.20,0.20) (0.02,0.20) -- (0.20,0.02);}}
+% Replace \kiKaestchen with \kiAngekreuzt to select a tool.
+\newcommand{\kiTools}{%
+  \vspace*{1.5mm}% Keep the first checkbox clear of the upper cell border.
+  \kiKaestchen\enspace ChatGPT\par\smallskip
+  \kiKaestchen\enspace Claude\par\smallskip
+  \kiKaestchen\enspace Gemini\par\smallskip
+  \kiKaestchen\enspace Andere: \rule{1.8cm}{0.4pt}}
+\noindent\kiKaestchen\quad Ich habe keine generative KI genutzt.\par
+\vspace{4mm}
+\noindent\kiKaestchen\quad Ich habe generative KI genutzt und diese Nutzung mit der folgenden Tabelle dokumentiert.\par
 
-\medskip
-\noindent Diese ergänzende Dokumentation ersetzt nicht die jeweils gültige
-Erklärung an Eides statt des zuständigen Prüfungsamts. Der zulässige Umfang
-des KI-Einsatzes ist vorab mit der Betreuung bzw. Prüfung abzustimmen.
+\vspace{5mm}
+\noindent
+\begin{tabular*}{\linewidth}{@{}l@{\extracolsep{\fill}}l@{}}
+Datum: \rule{3.5cm}{0.4pt} & Unterschrift: \rule{6cm}{0.4pt}
+\end{tabular*}
+
+\vspace{2mm}
+\noindent Tabelle: Dokumentation der KI- und Hilfsmittelverwendung\par
+\vspace{1mm}
+
+\begingroup
+\fontsize{9}{10.5}\selectfont
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.2}
+% Column weights sum to four, preserving tabularx's total width.
+\noindent
+\begin{tabularx}{\linewidth}{|
+  >{\hsize=.80\hsize\linewidth=\hsize\raggedright\arraybackslash}X|
+  >{\hsize=1.00\hsize\linewidth=\hsize\raggedright\arraybackslash}X|
+  >{\hsize=.88\hsize\linewidth=\hsize\raggedright\arraybackslash}X|
+  >{\hsize=1.32\hsize\linewidth=\hsize\raggedright\arraybackslash}X|}
+\hline
+\textbf{Zweck der Verwendung}\newline
+(gem. der aufgeführten Verwendungszwecke in der Übersicht der Hilfsmittel)
+& \textbf{Bezeichnung des Tools}\newline
+(Bezeichnung und Versionsnummer des KI-Modells / URL)
+& \textbf{Benutzt in folgenden Teilen der Arbeit}\newline
+(ggf. Angaben der Seiten, lfd. Nummer der Tabelle oder Grafik)
+& \textbf{Erläuterung der Arbeitsschritte / Reflexion}
+\\
+\hline
+% Example entries: adapt the text, select the tools and remove unused rows.
+\textbf{Sprachliche Unterstützung / Übersetzung}
+& \kiTools
+& \textit{Beispiel:}\newline Einleitung und Schlussbetrachtung; ausgewählte englischsprachige Textpassagen.\par\smallskip
+Modell / Version / URL:\newline\rule{\linewidth}{0.4pt}
+& \textit{Beispiel:}\newline
+KI unterstützte Grammatik- und Rechtschreibkorrektur, Umformulierungen,
+die Verbesserung der Lesbarkeit und Übersetzungen.
+Die Ergebnisse wurden kritisch geprüft, mit dem Ausgangstext verglichen
+und eigenständig überarbeitet.
+\\
+\hline
+\textbf{Ideenfindung / Gliederung / Literaturrecherche}
+& \kiTools
+& \textit{Beispiel:}\newline Gliederung, Überschriften und Grundlagenkapitel;
+Zusammenfassung und Vergleich selbst ausgewählter Quellen.\par\smallskip
+Modell / Version / URL:\newline\rule{\linewidth}{0.4pt}
+& \textit{Beispiel:}\newline
+KI lieferte Ideen, Gliederungs- und Überschriftenvorschläge und unterstützte
+die Literaturrecherche einschließlich Deep Research. Informationen aus selbst
+ausgewählten Quellen wurden zusammengefasst und verglichen.
+Quellen, Aussagen und Relevanz wurden eigenständig geprüft.
+\\
+\hline
+\textbf{Programmierung / Visualisierung / Formatierung}
+& \kiTools
+& \textit{Beispiel:}\newline Skripte und Code im Realisierungskapitel;
+Abbildungen, Diagramme sowie LaTeX-Formatierung.\par\smallskip
+Modell / Version / URL:\newline\rule{\linewidth}{0.4pt}
+& \textit{Beispiel:}\newline
+KI unterstützte Programmieraufgaben, Codeerläuterungen, Skriptentwicklung,
+Abbildungen, Diagramme sowie Formatierung und redaktionelle Aufgaben.
+Alle Ergebnisse wurden kritisch geprüft und überarbeitet.
+Ich trage die volle Verantwortung für Richtigkeit, Integrität und
+Originalität dieser Arbeit.
+\\
+\hline
+\end{tabularx}
+\endgroup
+
+\end{landscape}
+\restoregeometry
+\endgroup

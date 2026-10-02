@@ -42,12 +42,24 @@ Die Dateinamen können dort ebenfalls angepasst werden.
 
 ## Generative KI
 
-Die zusätzliche KI-Erklärung ist standardmäßig deaktiviert. Sie darf nur
-aktiviert werden, wenn ihr Einsatz und die verlangte Dokumentation mit der
-Betreuung beziehungsweise dem zuständigen Prüfungsamt geklärt wurden:
+Am Ende des Anhangs steht standardmäßig eine ausfüllbare Seite zur
+tabellarischen Dokumentation der KI- und Hilfsmittelverwendung im Querformat.
+Die Angaben und Tabellenzeilen werden in `Kapitel/DeclarationGenerativeAI.tex`
+bearbeitet. Name und Matrikelnummer werden aus `Einstellungen.tex` übernommen;
+Datum, Unterschrift und beide Auswahlkästchen sind zunächst leer. Das zutreffende
+Kästchen lässt sich dort mit `\kiAngekreuzt` statt `\kiKaestchen` markieren.
+
+Die Tabelle enthält deutsche Beispieltexte direkt in den Zellen sowie
+Werkzeugauswahlkästchen für ChatGPT, Claude, Gemini und ein
+Freifeld „Andere“. Die Auswahl wird im Quelltext mit
+`\kiAngekreuzt` statt `\kiKaestchen` vorgenommen oder im Ausdruck markiert.
+Die Texte müssen an die tatsächliche Nutzung angepasst werden;
+ungenutzte Einträge entfernen und Modell, Version oder URL ergänzen.
+
+Bei Bedarf lässt sich die Seite in `Einstellungen.tex` deaktivieren:
 
 ```latex
-\setbool{kiErklaerung}{true}
+\setbool{kiErklaerung}{false}
 ```
 
 Die jeweils gültige Erklärung an Eides statt bleibt unabhängig davon

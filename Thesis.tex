@@ -17,6 +17,9 @@
 
 % Selber eingebundene Pakete (optional)
 %\usepackage[package-optionen]{name-vom-package}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{pdflscape}
 
 % Eigene Befehle & Definitionen (optional)
 \newcommand{\zb}{z.\,B.}
@@ -62,6 +65,10 @@
 
 	\input{Kapitel/FAQ}              % Fragen und Antworten zur Vorlage und zu LaTeX
 	\input{Kapitel/LaTeX-Beispiele}  % Beispiele zu LaTeX
+
+	\ifbool{kiErklaerung}{%
+		\input{Kapitel/DeclarationGenerativeAI}%
+	}{}%
 
 	%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 	%%% ENDE %%% ENDE %%% ENDE %%% ENDE %%% ENDE %%% ENDE %%% ENDE %%% ENDE %%%%
