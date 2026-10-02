@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.7.21)  21 JUL 2026 16:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (MiKTeX 25.12) (preloaded format=pdflatex 2026.7.21)  23 JUL 2026 17:59
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1213,12 +1213,12 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip105
 )
-Package hyperref Info: Option `colorlinks' set `false' on input line 828.
-Package hyperref Info: Option `unicode' set `true' on input line 828.
-Package hyperref Info: Option `pdftoolbar' set `true' on input line 828.
-Package hyperref Info: Option `pdfmenubar' set `true' on input line 828.
-Package hyperref Info: Option `pdffitwindow' set `false' on input line 828.
-Package hyperref Info: Option `pdfnewwindow' set `true' on input line 828.
+Package hyperref Info: Option `colorlinks' set `false' on input line 820.
+Package hyperref Info: Option `unicode' set `true' on input line 820.
+Package hyperref Info: Option `pdftoolbar' set `true' on input line 820.
+Package hyperref Info: Option `pdfmenubar' set `true' on input line 820.
+Package hyperref Info: Option `pdffitwindow' set `false' on input line 820.
+Package hyperref Info: Option `pdfnewwindow' set `true' on input line 820.
 
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/glossaries-extra\glos
 saries-extra.sty
@@ -1657,79 +1657,43 @@ Package tocloft Warning: \@starttoc has already been redefined; tocloft bailing
 
 ) (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/xpatch\xpatch.sty
 Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
-)
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/generic/tikzducks\tikzducks
-.sty
-Package: tikzducks 2025/12/11 version v2.2 Draw rubber ducks in TikZ
-
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
-ikz/libraries\tikzlibrarypatterns.meta.code.tex
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgfli
-brarypatterns.meta.code.tex))
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
-ikz/libraries\tikzlibrarycalc.code.tex
-File: tikzlibrarycalc.code.tex 2025-08-29 v3.1.11a (3.1.11a)
-)
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
-ikz/libraries\tikzlibrarydecorations.shapes.code.tex
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
-ikz/libraries\tikzlibrarydecorations.code.tex
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmodu
-ledecorations.code.tex
-\pgfdecoratedcompleteddistance=\dimen355
-\pgfdecoratedremainingdistance=\dimen356
-\pgfdecoratedinputsegmentcompleteddistance=\dimen357
-\pgfdecoratedinputsegmentremainingdistance=\dimen358
-\pgf@decorate@distancetomove=\dimen359
-\pgf@decorate@repeatstate=\count582
-\pgfdecorationsegmentamplitude=\dimen360
-\pgfdecorationsegmentlength=\dimen361
-)
-\tikz@lib@dec@box=\box136
-)
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decor
-ations\pgflibrarydecorations.shapes.code.tex))
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/t
-ikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decor
-ations\pgflibrarydecorations.pathmorphing.code.tex))))
+))
 Package csquotes Info: Checking for multilingual support...
 Package csquotes Info: ... found 'babel' package.
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 27
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 28
 .
-
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 (C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.aux
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 22.
-\g__glossaries_gls_ref_acronym_int=\count583
-\g__glossaries_gls_ref_main_int=\count584
-\g__glossaries_gls_ref_abbreviations_int=\count585
-\g__glossaries_gls_ref_symbols_int=\count586
+\g__glossaries_gls_ref_acronym_int=\count582
+\g__glossaries_gls_ref_main_int=\count583
+\g__glossaries_gls_ref_abbreviations_int=\count584
+\g__glossaries_gls_ref_symbols_int=\count585
 )
 \openout1 = `Thesis.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 27.
-LaTeX Font Info:    ... okay on input line 27.
-LaTeX Info: Redefining \degres on input line 27.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 28.
+LaTeX Font Info:    ... okay on input line 28.
+LaTeX Info: Redefining \degres on input line 28.
 
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tr
 anslations-basic-dictionary-german.trsl
@@ -1737,7 +1701,7 @@ File: translations-basic-dictionary-german.trsl (german translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `german'. on input line 27.
+or `german'. on input line 28.
 
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tr
 anslations-basic-dictionary-french.trsl
@@ -1745,7 +1709,7 @@ File: translations-basic-dictionary-french.trsl (french translation file `trans
 lations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `french'. on input line 27.
+or `french'. on input line 28.
 
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/translations/dicts\tr
 anslations-basic-dictionary-english.trsl
@@ -1753,14 +1717,14 @@ File: translations-basic-dictionary-english.trsl (english translation file `tra
 nslations-basic-dictionary')
 )
 Package translations Info: loading dictionary `translations-basic-dictionary' f
-or `english'. on input line 27.
-LaTeX Info: Redefining \microtypecontext on input line 27.
-Package microtype Info: Applying patch `item' on input line 27.
-Package microtype Info: Applying patch `toc' on input line 27.
-Package microtype Info: Applying patch `eqnum' on input line 27.
-Package microtype Info: Applying patch `footnote' on input line 27.
-Package microtype Info: Applying patch `verbatim' on input line 27.
-LaTeX Info: Redefining \microtypesetup on input line 27.
+or `english'. on input line 28.
+LaTeX Info: Redefining \microtypecontext on input line 28.
+Package microtype Info: Applying patch `item' on input line 28.
+Package microtype Info: Applying patch `toc' on input line 28.
+Package microtype Info: Applying patch `eqnum' on input line 28.
+Package microtype Info: Applying patch `footnote' on input line 28.
+Package microtype Info: Applying patch `verbatim' on input line 28.
+LaTeX Info: Redefining \microtypesetup on input line 28.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -1821,8 +1785,8 @@ Package biblatex Info: Data encoding 'utf8' specified.
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'Thesis.bbl' found.
  (C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.bbl)
-Package biblatex Info: Reference section=0 on input line 27.
-Package biblatex Info: Reference segment=0 on input line 27.
+Package biblatex Info: Reference section=0 on input line 28.
+Package biblatex Info: Reference segment=0 on input line 28.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -1863,16 +1827,16 @@ Package biblatex Info: Reference segment=0 on input line 27.
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.
 mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count587
-\scratchdimen=\dimen362
-\scratchbox=\box137
-\nofMPsegments=\count588
-\nofMParguments=\count589
+\scratchcounter=\count586
+\scratchdimen=\dimen355
+\scratchbox=\box136
+\nofMPsegments=\count587
+\nofMParguments=\count588
 \everyMPshowfont=\toks63
-\MPscratchCnt=\count590
-\MPscratchDim=\dimen363
-\MPnumerator=\count591
-\makeMPintoPDFobject=\count592
+\MPscratchCnt=\count589
+\MPscratchDim=\dimen356
+\MPnumerator=\count590
+\makeMPintoPDFobject=\count591
 \everyMPtoPDFconversion=\toks64
 )
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf
@@ -1899,7 +1863,7 @@ Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
 )
 Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
 ))
-\c@lstlisting=\count593
+\c@lstlisting=\count592
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: hyperref package is loaded.
 Package caption Info: longtable package is loaded.
@@ -1909,7 +1873,7 @@ Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
 )
 Package caption Info: supertabular package is loaded.
 Package caption Info: End \AtBeginDocument code.
-Package hyperref Info: Link coloring OFF on input line 27.
+Package hyperref Info: Link coloring OFF on input line 28.
  (C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.out)
 (C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.out)
 \@outlinefile=\write5
@@ -1920,11 +1884,11 @@ Package hyperref Info: Link coloring OFF on input line 27.
 Package todonotes Warning: The length marginparwidth is less than 2cm and will 
 most likely cause issues with the appearance of inserted todonotes. The issue c
 an be solved by adding a line like \setlength {\marginparwidth }{2cm} prior to 
-loading the todonotes package. on input line 27.
+loading the todonotes package. on input line 28.
 
 (Vorlage/FrontMatter.tex
-LaTeX Font Info:    Trying to load font information for T1+lmss on input line 3
-6.
+LaTeX Font Info:    Trying to load font information for T1+lmss on input line 4
+9.
 
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmss.fd
 File: t1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
@@ -1933,174 +1897,77 @@ Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `lmss' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
-<Medien/Uni_Wuppertal_Logo__richblack.pdf, id=390, 157.12038pt x 49.60533pt>
+<Medien/Uni_Wuppertal_Logo__richblack.pdf, id=378, 157.12038pt x 49.60533pt>
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
-t line 39.
-(pdftex.def)             Requested size: 128.0374pt x 40.42607pt.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 8
-9.
+t line 52.
+(pdftex.def)             Requested size: 127.98123pt x 40.40285pt.
 
+
+pdfTeX warning: pdflatex.EXE (file ./Medien/TMDT_Logo_Farbe.pdf): PDF inclusion
+: found PDF version <1.6>, but at most version <1.5> allowed
+<Medien/TMDT_Logo_Farbe.pdf, id=379, 1375.51894pt x 606.14658pt>
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 52.
+(pdftex.def)             Requested size: 40.83452pt x 40.40285pt.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
+04.
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/lm\ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 8
-9.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
+04.
 
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/lm\omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-89.
+104.
 
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/lm\omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-89.
+104.
 
 (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/lm\omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <12> on input line 89.
+(Font)              <12> on input line 104.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 89.
+(Font)              <8> on input line 104.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 89.
+(Font)              <6> on input line 104.
 
 [1
 
 {C:/Users/Raphael/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Ra
 phael/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc} <./Medien/Uni
-_Wuppertal_Logo__richblack.pdf>]
-<Medien/Aufgabenstellung.pdf, id=401, 597.23125pt x 845.1575pt>
-File: Medien/Aufgabenstellung.pdf Graphic file (type pdf)
-<use Medien/Aufgabenstellung.pdf>
-Package pdftex.def Info: Medien/Aufgabenstellung.pdf  used on input line 112.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-<Medien/Aufgabenstellung.pdf, id=403, page=1, 597.23125pt x 845.1575pt>
-File: Medien/Aufgabenstellung.pdf Graphic file (type pdf)
-<use Medien/Aufgabenstellung.pdf, page 1>
-Package pdftex.def Info: Medien/Aufgabenstellung.pdf , page1 used on input line
- 112.
-(pdftex.def)             Requested size: 597.22978pt x 845.15544pt.
-File: Medien/Aufgabenstellung.pdf Graphic file (type pdf)
-<use Medien/Aufgabenstellung.pdf, page 1>
-Package pdftex.def Info: Medien/Aufgabenstellung.pdf , page1 used on input line
- 112.
-(pdftex.def)             Requested size: 597.33913pt x 845.31018pt.
-File: Medien/Aufgabenstellung.pdf Graphic file (type pdf)
-<use Medien/Aufgabenstellung.pdf, page 1>
-Package pdftex.def Info: Medien/Aufgabenstellung.pdf , page1 used on input line
- 112.
-(pdftex.def)             Requested size: 597.33913pt x 845.31018pt.
-File: Medien/Aufgabenstellung.pdf Graphic file (type pdf)
-<use Medien/Aufgabenstellung.pdf, page 1>
-Package pdftex.def Info: Medien/Aufgabenstellung.pdf , page1 used on input line
- 112.
-(pdftex.def)             Requested size: 597.33913pt x 845.31018pt.
-File: Medien/Aufgabenstellung.pdf Graphic file (type pdf)
-<use Medien/Aufgabenstellung.pdf, page 1>
-Package pdftex.def Info: Medien/Aufgabenstellung.pdf , page1 used on input line
- 112.
-(pdftex.def)             Requested size: 597.33913pt x 845.31018pt.
- [2
-
-
-
- <./Medien/Aufgabenstellung.pdf>]
-<Medien/Muster_Eidesstattliche_Versicherung.pdf, id=432, 598.235pt x 846.16125p
-t>
-File: Medien/Muster_Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
-<use Medien/Muster_Eidesstattliche_Versicherung.pdf>
-Package pdftex.def Info: Medien/Muster_Eidesstattliche_Versicherung.pdf  used o
-n input line 137.
-(pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
-<Medien/Muster_Eidesstattliche_Versicherung.pdf, id=434, page=1, 598.235pt x 84
-6.16125pt>
-File: Medien/Muster_Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
-<use Medien/Muster_Eidesstattliche_Versicherung.pdf, page 1>
-Package pdftex.def Info: Medien/Muster_Eidesstattliche_Versicherung.pdf , page1
- used on input line 137.
-(pdftex.def)             Requested size: 598.23354pt x 846.1592pt.
-File: Medien/Muster_Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
-<use Medien/Muster_Eidesstattliche_Versicherung.pdf, page 1>
-Package pdftex.def Info: Medien/Muster_Eidesstattliche_Versicherung.pdf , page1
- used on input line 137.
-(pdftex.def)             Requested size: 598.34306pt x 846.31412pt.
-File: Medien/Muster_Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
-<use Medien/Muster_Eidesstattliche_Versicherung.pdf, page 1>
-Package pdftex.def Info: Medien/Muster_Eidesstattliche_Versicherung.pdf , page1
- used on input line 137.
-(pdftex.def)             Requested size: 598.34306pt x 846.31412pt.
-File: Medien/Muster_Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
-<use Medien/Muster_Eidesstattliche_Versicherung.pdf, page 1>
-Package pdftex.def Info: Medien/Muster_Eidesstattliche_Versicherung.pdf , page1
- used on input line 137.
-(pdftex.def)             Requested size: 598.34306pt x 846.31412pt.
-File: Medien/Muster_Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
-<use Medien/Muster_Eidesstattliche_Versicherung.pdf, page 1>
-Package pdftex.def Info: Medien/Muster_Eidesstattliche_Versicherung.pdf , page1
- used on input line 137.
-(pdftex.def)             Requested size: 598.34306pt x 846.31412pt.
- [3
-
-
-
- <./Medien/Muster_Eidesstattliche_Versicherung.pdf>]
-<Medien/Muster_Eidesstattliche_Versicherung.pdf, id=499, page=2, 598.235pt x 84
-6.16125pt>
-File: Medien/Muster_Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
-<use Medien/Muster_Eidesstattliche_Versicherung.pdf, page 2>
-Package pdftex.def Info: Medien/Muster_Eidesstattliche_Versicherung.pdf , page2
- used on input line 137.
-(pdftex.def)             Requested size: 598.34306pt x 846.31412pt.
-File: Medien/Muster_Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
-<use Medien/Muster_Eidesstattliche_Versicherung.pdf, page 2>
-Package pdftex.def Info: Medien/Muster_Eidesstattliche_Versicherung.pdf , page2
- used on input line 137.
-(pdftex.def)             Requested size: 598.34306pt x 846.31412pt.
-File: Medien/Muster_Eidesstattliche_Versicherung.pdf Graphic file (type pdf)
-<use Medien/Muster_Eidesstattliche_Versicherung.pdf, page 2>
-Package pdftex.def Info: Medien/Muster_Eidesstattliche_Versicherung.pdf , page2
- used on input line 137.
-(pdftex.def)             Requested size: 598.34306pt x 846.31412pt.
- [4
-
- <./Medien/Muster_Eidesstattliche_Versicherung.pdf>] [5
-
-] (Kapitel/DeclarationGenerativeAI.tex) [6
-
-
-
+_Wuppertal_Logo__richblack.pdf> <./Medien/TMDT_Logo_Farbe.pdf>] [2
 
 
 ]
 (Kapitel/Kurzfassung.tex
 Package hyperref Info: bookmark level for unknown todo defaults to 0 on input l
 ine 7.
-) [7
+) [3
+
+
 
 
 ]
-(C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.toc
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
-3.
-
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
-File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-[8
+(C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.toc [4
 
 
-{C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.enc}]
- [9])
+] [5])
 \tf@toc=\write6
 \openout6 = `Thesis.toc'.
 
- [10]) (Kapitel/Einleitung.tex
+ [6])
+(Kapitel/Einleitung.tex
 Kapitel 1.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 6.
@@ -2114,6 +1981,10 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 1.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 1.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 Package babel Info: 'ngerman' activates 'german' shorthands.
 (babel)             Reported on input line 1.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
@@ -2121,76 +1992,94 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 1.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 1.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [2]
 Kapitel 2.
-LaTeX Font Info:    Trying to load font information for TS1+lmss on input line 
-16.
-(C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmss.fd
-File: ts1lmss.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-)
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `lmss' (encoding: TS1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <17.28> on input line 18.
-LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 18.
-
 [3
 
-{C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
-c}{C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}
-{C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.en
-c}]
-Overfull \hbox (0.25671pt too wide) in paragraph at lines 27--27
-|[]\T1/lmss/bx/n/17.28 (-20) Neulingsche ^^RGeht oh-ne Kondensator^^P-Vermutung
-| 
- []
-
+]
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 29.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 29.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 29.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
-[4]
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 29.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
+ [4]
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 37.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 37.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 37.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 37.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [5]
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <17.28> on input line 37.
+LaTeX Font Info:    External font `lmex10' loaded for size
+(Font)              <10> on input line 37.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 47.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 47.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 47.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 47.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [6]) (Kapitel/Entwurf.tex
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 1.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 1.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 1.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 1.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [7]
 Kapitel 3.
 [8
@@ -2201,22 +2090,38 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 20.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 20.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 20.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 20.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [9]) (Kapitel/Realisierung.tex
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 1.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 1.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 1.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 1.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [10]
 Kapitel 4.
 [11
@@ -2227,23 +2132,45 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 19.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 19.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 19.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
- [12]) (Kapitel/Analyse.tex
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 19.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
+ [12]
+<Medien/captain-deadline.png, id=727, 1027.84pt x 1541.76pt>
+File: Medien/captain-deadline.png Graphic file (type png)
+<use Medien/captain-deadline.png>
+Package pdftex.def Info: Medien/captain-deadline.png  used on input line 26.
+(pdftex.def)             Requested size: 129.37973pt x 194.06047pt.
+) (Kapitel/Analyse.tex
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 1.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 1.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 1.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
- [13]
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 1.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
+ [13 <./Medien/captain-deadline.png>]
 Kapitel 5.
 ) (Kapitel/Schlussbetrachtungen.tex [14
 
@@ -2283,7 +2210,9 @@ Package glossaries Info: Preparing to sort glossary `abbreviations' (total
 [16
 
 
-]
+{C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.en
+c}{C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.
+enc}]
 
 Package glossaries Info: Preparing to sort glossary `acronym' (total number of
 (glossaries)             referenced entries: 2)
@@ -2342,11 +2271,19 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 78.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 78.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 78.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 78.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 
 Package fancyhdr Warning: \headheight is too small (34.14322pt): 
 (fancyhdr)                Make it at least 34.30585pt, for example:
@@ -2360,11 +2297,19 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 107.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 107.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 107.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 107.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 
 
 Package fancyhdr Warning: \headheight is too small (34.14322pt): 
@@ -2374,16 +2319,29 @@ Package fancyhdr Warning: \headheight is too small (34.14322pt):
 (fancyhdr)                \addtolength{\topmargin}{-0.16263pt}.
 
 [21]
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 1
+17.
+ (C:\Users\Raphael\AppData\Local\Programs\MiKTeX\tex/latex/lm\ts1lmr.fd
+File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+)
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 122.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 122.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 122.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 122.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 
 
 Package fancyhdr Warning: \headheight is too small (34.14322pt): 
@@ -2392,7 +2350,8 @@ Package fancyhdr Warning: \headheight is too small (34.14322pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-0.16263pt}.
 
-[22]
+[22{C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ts1.en
+c}]
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <20.74> on input line 123.
 LaTeX Font Info:    External font `lmex10' loaded for size
@@ -2402,11 +2361,19 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 161.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 161.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 161.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 161.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 
 
 Package fancyhdr Warning: \headheight is too small (34.14322pt): 
@@ -2423,11 +2390,19 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 211.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 211.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 211.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 211.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 
 
 Package fancyhdr Warning: \headheight is too small (34.14322pt): 
@@ -2442,11 +2417,19 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 1.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 1.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 1.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 1.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 
 
 Package fancyhdr Warning: \headheight is too small (34.14322pt): 
@@ -2486,22 +2469,38 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 69.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 69.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 69.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 69.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [27]
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 132.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 132.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 132.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 132.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [28
 
 ]
@@ -2515,33 +2514,58 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 170.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 170.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 170.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
-[29]
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 170.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
+[29{C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc
+}]
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 205.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 205.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 205.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 205.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [30]
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 226.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 226.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 226.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 226.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [31{C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathe
 x.enc}]
 Overfull \hbox (2.30362pt too wide) in paragraph at lines 231--259
@@ -2570,11 +2594,19 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 359.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 359.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 359.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 359.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 [32
 
 ]
@@ -2590,44 +2622,52 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 377.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 377.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 377.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 377.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 [33]
-<Medien/Uni_Wuppertal_Logo.pdf, id=1099, 157.12038pt x 49.60533pt>
+<Medien/Uni_Wuppertal_Logo.pdf, id=1080, 157.12038pt x 49.60533pt>
 File: Medien/Uni_Wuppertal_Logo.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo.pdf  used on input line 384.
 
 (pdftex.def)             Requested size: 113.81102pt x 35.93227pt.
-<Medien/suzanne-raw.png, id=1100, 401.5pt x 301.125pt>
+<Medien/suzanne-raw.png, id=1081, 401.5pt x 301.125pt>
 File: Medien/suzanne-raw.png Graphic file (type png)
 <use Medien/suzanne-raw.png>
 Package pdftex.def Info: Medien/suzanne-raw.png  used on input line 399.
 (pdftex.def)             Requested size: 147.86658pt x 110.89987pt.
-<Medien/suzanne-intensity.png, id=1101, 401.5pt x 301.125pt>
+<Medien/suzanne-intensity.png, id=1082, 401.5pt x 301.125pt>
 File: Medien/suzanne-intensity.png Graphic file (type png)
 <use Medien/suzanne-intensity.png>
 Package pdftex.def Info: Medien/suzanne-intensity.png  used on input line 403.
 (pdftex.def)             Requested size: 147.86658pt x 110.89987pt.
-<Medien/suzanne-albedo.png, id=1103, 401.5pt x 301.125pt>
+<Medien/suzanne-albedo.png, id=1083, 401.5pt x 301.125pt>
 File: Medien/suzanne-albedo.png Graphic file (type png)
 <use Medien/suzanne-albedo.png>
 Package pdftex.def Info: Medien/suzanne-albedo.png  used on input line 407.
 (pdftex.def)             Requested size: 147.86658pt x 110.89987pt.
-<Medien/suzanne-variance.png, id=1104, 401.5pt x 301.125pt>
+<Medien/suzanne-variance.png, id=1084, 401.5pt x 301.125pt>
 File: Medien/suzanne-variance.png Graphic file (type png)
 <use Medien/suzanne-variance.png>
 Package pdftex.def Info: Medien/suzanne-variance.png  used on input line 411.
 (pdftex.def)             Requested size: 147.86658pt x 110.89987pt.
-<Medien/suzanne-sw.png, id=1105, 401.5pt x 301.125pt>
+<Medien/suzanne-sw.png, id=1085, 401.5pt x 301.125pt>
 File: Medien/suzanne-sw.png Graphic file (type png)
 <use Medien/suzanne-sw.png>
 Package pdftex.def Info: Medien/suzanne-sw.png  used on input line 416.
 (pdftex.def)             Requested size: 147.86658pt x 110.89987pt.
-<Medien/suzanne-false-color.png, id=1106, 401.5pt x 301.125pt>
+<Medien/suzanne-false-color.png, id=1086, 401.5pt x 301.125pt>
 File: Medien/suzanne-false-color.png Graphic file (type png)
 <use Medien/suzanne-false-color.png>
 Package pdftex.def Info: Medien/suzanne-false-color.png  used on input line 421
@@ -2645,11 +2685,19 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 430.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 430.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 430.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 430.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 [34
 
  <./Medien/Uni_Wuppertal_Logo.pdf> <./Medien/suzanne-raw.png> <./Medien/suzanne
@@ -2665,22 +2713,38 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 483.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 483.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 483.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 483.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 [35]
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 529.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 529.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 529.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 529.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
  [36]
 Overfull \hbox (39.71414pt too wide) in paragraph at lines 557--559
 \T1/lmr/m/n/12 (-20) es soll aber trotz-dem ein Ein-trag er-zeugt wer-den. In d
@@ -2692,11 +2756,19 @@ File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 571.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 571.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
 t line 571.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 571.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 [37] (C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.tdo
 Underfull \hbox (badness 10000) in paragraph at lines 8--8
   
@@ -2716,76 +2788,120 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--8
 \tf@tdo=\write10
 \openout10 = `Thesis.tdo'.
 
+<Medien/captain-appendix.png, id=1248, 1027.84pt x 1541.76pt>
+File: Medien/captain-appendix.png Graphic file (type png)
+<use Medien/captain-appendix.png>
+Package pdftex.def Info: Medien/captain-appendix.png  used on input line 586.
+(pdftex.def)             Requested size: 175.5898pt x 263.3661pt.
 )
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
-t line 70.
+t line 69.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 69.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
 File: Medien/Uni_Wuppertal_Logo__richblack.pdf Graphic file (type pdf)
 <use Medien/Uni_Wuppertal_Logo__richblack.pdf>
 Package pdftex.def Info: Medien/Uni_Wuppertal_Logo__richblack.pdf  used on inpu
-t line 70.
+t line 69.
 (pdftex.def)             Requested size: 74.43396pt x 23.49966pt.
- [39] (C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.aux)
+File: Medien/TMDT_Logo_Farbe.pdf Graphic file (type pdf)
+<use Medien/TMDT_Logo_Farbe.pdf>
+Package pdftex.def Info: Medien/TMDT_Logo_Farbe.pdf  used on input line 69.
+(pdftex.def)             Requested size: 23.74535pt x 23.49966pt.
+ [39 <./Medien/captain-appendix.png>]
+(C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.aux)
  ***********
 LaTeX2e <2025-11-01>
 L3 programming layer <2020/03/25>
  ***********
-Package rerunfilecheck Info: File `Thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 7A185BC443DDA6FFD9445E42FD257184;14718.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `Thesis.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Thesis.out':
+(rerunfilecheck)             Before: B6B89B1735987975C4F4487000FFD1B4;14323
+(rerunfilecheck)             After:  A7907CB99C690DE83EB8B5B643BD6176;14323.
 Package logreq Info: Writing requests to 'Thesis.run.xml'.
 \openout1 = `Thesis.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 58440 strings out of 467871
- 1218005 string characters out of 5417408
- 2203192 words of memory out of 5000000
- 85861 multiletter control sequences out of 15000+600000
- 773052 words of font info for 274 fonts, out of 8000000 for 9000
+ 56367 strings out of 467871
+ 1163738 string characters out of 5417408
+ 2114508 words of memory out of 5000000
+ 83838 multiletter control sequences out of 15000+600000
+ 772350 words of font info for 269 fonts, out of 8000000 for 9000
  1143 hyphenation exceptions out of 8191
- 98i,20n,100p,7174b,3019s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Raphael\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbding/dpi720\
-bbding10.pk><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-eurosym/feymr10.pfb><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1
-/public/amsfonts/latxfont/lcircle1.pfb><C:/Users/Raphael/AppData/Local/Programs
-/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Raphael/AppData/Local/Progra
-ms/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Raphael/AppData/Local/Prog
-rams/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Raphael/AppData/Local/Pro
-grams/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Raphael/AppData/Local/
-Programs/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Raphael/AppData/Loca
-l/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Raphael/AppData/Lo
-cal/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Raphael/AppData/
-Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Raphael/AppData
-/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Raphael/AppDat
-a/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Raphael/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Raphael/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Raphael/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Raphael/AppDa
-ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Raphael/App
-Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Raphael/A
-ppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/Raphael/
-AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/Raphae
-l/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/Raph
-ael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/Ra
-phael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Users/R
-aphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Use
-rs/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:
-/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><
-C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb>
-<C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pf
-b><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtl10.
+ 98i,20n,100p,2588b,3018s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning (dest): name{section*.48} has been referenced but does not exist
+, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.47} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{table.caption.43} has been referenced but does not 
+exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{figure.caption.45} has been referenced but does not
+ exist, replaced by a fixed one
+
+
+pdfTeX warning (dest): name{section*.34} has been referenced but does not exist
+, replaced by a fixed one
+
+ <C:\Users\Raphael\AppData\Local\MiKTeX\fonts/pk/ljfour/public/bbding/dpi720\bb
+ding10.pk><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/eu
+rosym/feymr10.pfb><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/p
+ublic/amsfonts/latxfont/lcircle1.pfb><C:/Users/Raphael/AppData/Local/Programs/M
+iKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/Raphael/AppData/Local/Programs
+/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/Raphael/AppData/Local/Progra
+ms/MiKTeX/fonts/type1/public/lm/lmbx8.pfb><C:/Users/Raphael/AppData/Local/Progr
+ams/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/Raphael/AppData/Local/Pr
+ograms/MiKTeX/fonts/type1/public/lm/lmex10.pfb><C:/Users/Raphael/AppData/Local/
+Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/Raphael/AppData/Loca
+l/Programs/MiKTeX/fonts/type1/public/lm/lmmi12.pfb><C:/Users/Raphael/AppData/Lo
+cal/Programs/MiKTeX/fonts/type1/public/lm/lmmi8.pfb><C:/Users/Raphael/AppData/L
+ocal/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/Raphael/AppData/
+Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/Raphael/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr6.pfb><C:/Users/Raphael/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/Raphael/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr8.pfb><C:/Users/Raphael/AppData
+/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri10.pfb><C:/Users/Raphael/AppDa
+ta/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri12.pfb><C:/Users/Raphael/App
+Data/Local/Programs/MiKTeX/fonts/type1/public/lm/lmri8.pfb><C:/Users/Raphael/Ap
+pData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss10.pfb><C:/Users/Raphael/
+AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss12.pfb><C:/Users/Raphae
+l/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss17.pfb><C:/Users/Raph
+ael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmss8.pfb><C:/Users/Rap
+hael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbo10.pfb><C:/Users
+/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmssbx10.pfb><C:/U
+sers/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb><C:
+/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy8.pfb><C
+:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtk10.pfb>
+<C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtl10.pf
+b><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt10.
 pfb><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmtt1
-0.pfb><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmt
-t12.pfb><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/l
-mtt8.pfb><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/
-lmtti10.pfb><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/
-lm/lmtto10.pfb>
-Output written on C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.pdf (49 p
-ages, 1730715 bytes).
+2.pfb><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmt
+t8.pfb><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lm
+tti10.pfb><C:/Users/Raphael/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm
+/lmtto10.pfb>
+Output written on C:\Users\Raphael\Vorlage-Latex\.build\output\Thesis.pdf (45 p
+ages, 3483631 bytes).
 PDF statistics:
- 1498 PDF objects out of 1728 (max. 8388607)
- 304 named destinations out of 1000 (max. 500000)
- 93528 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 1494 PDF objects out of 1728 (max. 8388607)
+ 301 named destinations out of 1000 (max. 500000)
+ 91766 words of extra memory for PDF output out of 106986 (max. 10000000)
 

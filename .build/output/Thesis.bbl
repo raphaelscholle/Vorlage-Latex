@@ -85,31 +85,9 @@
     \field{labelnamesource}{author}
     \field{labeltitlesource}{title}
     \field{labelalpha}{Mus26}
-    \field{extraalpha}{1}
     \field{sortinit}{M}
     \field{sortinithash}{M}
     \field{title}{Beispielquelle}
-    \field{year}{2026}
-  \endentry
-
-  \entry{thesis:vorlage}{misc}{}{}
-    \name{author}{1}{}{%
-      {{hash=MM}{%
-         family={Mustermann},
-         familyi={M\bibinitperiod},
-         given={Max},
-         giveni={M\bibinitperiod},
-      }}%
-    }
-    \strng{namehash}{MM1}
-    \strng{fullhash}{MM1}
-    \field{labelnamesource}{author}
-    \field{labeltitlesource}{title}
-    \field{labelalpha}{Mus26}
-    \field{extraalpha}{2}
-    \field{sortinit}{M}
-    \field{sortinithash}{M}
-    \field{title}{Thesisvorlage}
     \field{year}{2026}
   \endentry
 
@@ -129,6 +107,24 @@
     \field{sortinithash}{S}
     \field{title}{LD1117 Datasheet}
     \field{year}{2021}
+  \endentry
+
+  \entry{thesis:vorlage}{misc}{}{}
+    \name{author}{1}{}{%
+      {{hash=T}{%
+         family={{TMDT}},
+         familyi={T\bibinitperiod},
+      }}%
+    }
+    \strng{namehash}{T1}
+    \strng{fullhash}{T1}
+    \field{labelnamesource}{author}
+    \field{labeltitlesource}{title}
+    \field{labelalpha}{{TMD}26}
+    \field{sortinit}{T}
+    \field{sortinithash}{T}
+    \field{title}{TMDT-Thesisvorlage}
+    \field{year}{2026}
   \endentry
 \enddatalist
 \endinput

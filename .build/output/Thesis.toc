@@ -9,14 +9,14 @@
 \contentsline {section}{\numberline {1.3}Aufbau der Thesis}{1}{section.1.3}%
 \contentsline {section}{\numberline {1.4}Notation}{2}{section.1.4}%
 \contentsline {chapter}{\numberline {2}Grundlagen}{3}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Verwendete Protokolle}{3}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}I³C}{3}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}B$^\text {U}_\text {W}$ 4.0}{3}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}HTML}{4}{subsection.2.1.3}%
-\contentsline {section}{\numberline {2.2}Elektrotechnik}{4}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}Richtungsabhängigkeit von passiven Bauteilen}{4}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Neulingsche \glqq Geht ohne Kondensator\grqq -Vermutung}{4}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Liquid Crystal LCD-Displays}{5}{subsection.2.2.3}%
+\contentsline {section}{\numberline {2.1}Digitale Transformation}{3}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}Sozio-technische Systeme}{3}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Datengetriebene Wertschöpfung}{3}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Technologieakzeptanz}{4}{subsection.2.1.3}%
+\contentsline {section}{\numberline {2.2}Daten und Methoden}{4}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Datenerhebung und Datenqualität}{4}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Maschinelles Lernen}{4}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Evaluation und Gütekriterien}{5}{subsection.2.2.3}%
 \contentsline {section}{\numberline {2.3}Mathematik}{5}{section.2.3}%
 \contentsline {subsection}{\numberline {2.3.1}Numerische Evaluation der Division durch Null}{5}{subsection.2.3.1}%
 \contentsline {subsection}{\numberline {2.3.2}Die ganzverwurschtelte Invers-Transformation}{5}{subsection.2.3.2}%
@@ -43,23 +43,23 @@
 \contentsline {chapter}{\numberline {6}Schlussbetrachtungen}{15}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Fazit}{15}{section.6.1}%
 \contentsline {section}{\numberline {6.2}Ausblick}{15}{section.6.2}%
-\contentsline {chapter}{Abbildungsverzeichnis}{16}{section*.16}%
-\contentsline {chapter}{Quellcodeverzeichnis}{16}{section*.18}%
-\contentsline {chapter}{Tabellenverzeichnis}{16}{section*.20}%
-\contentsline {chapter}{Symbole}{16}{section*.22}%
-\contentsline {chapter}{Abkürzungen}{17}{section*.25}%
-\contentsline {chapter}{Akronyme}{17}{section*.28}%
-\contentsline {chapter}{Glossar}{17}{section*.31}%
-\contentsline {chapter}{Literatur}{17}{section*.34}%
-\contentsline {chapter}{Weiterführende Literatur}{17}{section*.36}%
+\contentsline {chapter}{Abbildungsverzeichnis}{16}{section*.15}%
+\contentsline {chapter}{Quellcodeverzeichnis}{16}{section*.17}%
+\contentsline {chapter}{Tabellenverzeichnis}{16}{section*.19}%
+\contentsline {chapter}{Symbole}{16}{section*.21}%
+\contentsline {chapter}{Abkürzungen}{16}{section*.24}%
+\contentsline {chapter}{Akronyme}{17}{section*.27}%
+\contentsline {chapter}{Glossar}{17}{section*.30}%
+\contentsline {chapter}{Literatur}{17}{section*.33}%
+\contentsline {chapter}{Weiterführende Literatur}{17}{section*.35}%
 \contentsline {chapter}{\numberline {A}Sourcecode}{18}{appendix.A}%
 \contentsline {chapter}{\numberline {B}Fragen und Antworten (FAQs)}{19}{appendix.B}%
 \contentsline {section}{\numberline {B.1}Zu dieser Vorlage}{19}{section.B.1}%
 \contentsline {subsection}{\numberline {B.1.1}Was brauche ich?}{19}{subsection.B.1.1}%
 \contentsline {subsubsection}{\numberline {B.1.1.1}Diese Vorlage}{19}{subsubsection.B.1.1.1}%
 \contentsline {subsubsection}{\numberline {B.1.1.2}Eine LaTeX-Distribution}{19}{subsubsection.B.1.1.2}%
-\contentsline {paragraph}{TeX Live}{19}{paragraph*.38}%
-\contentsline {paragraph}{MiKTeX}{19}{paragraph*.39}%
+\contentsline {paragraph}{TeX Live}{19}{paragraph*.37}%
+\contentsline {paragraph}{MiKTeX}{19}{paragraph*.38}%
 \contentsline {subsubsection}{\numberline {B.1.1.3}Einen (LaTeX-) Editor}{20}{subsubsection.B.1.1.3}%
 \contentsline {subsubsection}{\numberline {B.1.1.4}Eine Literaturverwaltung (optional)}{20}{subsubsection.B.1.1.4}%
 \contentsline {subsection}{\numberline {B.1.2}Titelblatt und Einstellungen ändern}{20}{subsection.B.1.2}%
@@ -80,13 +80,13 @@
 \contentsline {section}{\numberline {C.1}Kapitel, Abschnitte, Paragraphen}{26}{section.C.1}%
 \contentsline {subsection}{\numberline {C.1.1}Subsection}{26}{subsection.C.1.1}%
 \contentsline {subsubsection}{\numberline {C.1.1.1}Subsubsection}{26}{subsubsection.C.1.1.1}%
-\contentsline {paragraph}{Paragraph}{26}{paragraph*.40}%
+\contentsline {paragraph}{Paragraph}{26}{paragraph*.39}%
 \contentsline {section}{\numberline {C.2}Textauszeichnung}{26}{section.C.2}%
 \contentsline {section}{\numberline {C.3}Fußnoten}{27}{section.C.3}%
 \contentsline {section}{\numberline {C.4}Zitate \& Literaturangaben}{27}{section.C.4}%
 \contentsline {subsection}{\numberline {C.4.1}Zitieren}{27}{subsection.C.4.1}%
-\contentsline {paragraph}{Keine Panik...}{27}{paragraph*.41}%
-\contentsline {paragraph}{...aber bitte eigene Leistung zeigen}{27}{paragraph*.42}%
+\contentsline {paragraph}{Keine Panik...}{27}{paragraph*.40}%
+\contentsline {paragraph}{...aber bitte eigene Leistung zeigen}{27}{paragraph*.41}%
 \contentsline {subsection}{\numberline {C.4.2}Literaturverzeichnis}{28}{subsection.C.4.2}%
 \contentsline {subsection}{\numberline {C.4.3}Zitate in \LaTeX }{28}{subsection.C.4.3}%
 \contentsline {section}{\numberline {C.5}Zahlen und Formeln}{29}{section.C.5}%
@@ -95,8 +95,8 @@
 \contentsline {subsubsection}{\numberline {C.5.1.2}Einheiten}{30}{subsubsection.C.5.1.2}%
 \contentsline {subsubsection}{\numberline {C.5.1.3}Zahlen mit Einheiten}{30}{subsubsection.C.5.1.3}%
 \contentsline {subsection}{\numberline {C.5.2}Formeln}{30}{subsection.C.5.2}%
-\contentsline {paragraph}{Formeln im Text}{30}{paragraph*.43}%
-\contentsline {paragraph}{Abgesetzte Formeln}{31}{paragraph*.44}%
+\contentsline {paragraph}{Formeln im Text}{30}{paragraph*.42}%
+\contentsline {paragraph}{Abgesetzte Formeln}{31}{paragraph*.43}%
 \contentsline {subsection}{\numberline {C.5.3}Griechisches Alphabet}{32}{subsection.C.5.3}%
 \contentsline {subsection}{\numberline {C.5.4}Sonstige}{33}{subsection.C.5.4}%
 \contentsline {section}{\numberline {C.6}Abbildungen}{34}{section.C.6}%
